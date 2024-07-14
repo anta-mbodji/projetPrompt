@@ -8,7 +8,6 @@ def connect():
                              host="localhost",
                              user="postgres",
                              password="improvise")
-    #cur = conn.cursor()
     return conn
 
 # Fonction pour exécuter des requêtes SQL qui modifient la base de données

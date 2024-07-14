@@ -21,7 +21,7 @@ def admin_required(f):
     def decorated(*args, **kwargs):
         role = request.headers.get('role')
         if role != 'admin':
-            return jsonify({'message': 'Permission!'}), 403
+            return jsonify({'message': 'Permission denied!'}), 403
 
         return f(*args, **kwargs)  # Exécuter la fonction décorée
     return decorated
