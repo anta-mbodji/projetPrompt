@@ -6,7 +6,7 @@ from routes.admin_routes import admin_bp
 from routes.visiteur_routes import visiteur_bp
 from routes.note_routes import note_bp
 from routes.vote_routes import vote_bp
-
+ 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
